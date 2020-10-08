@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"55L1":function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),o=t.n(a);e.default=function(){return o.a.createElement("footer",null,"© Ekaterina Blau, 2020")}}}]);
+//# sourceMappingURL=component---src-pages-footer-footer-jsx-6cc6e0b800a69b2e6c58.js.map

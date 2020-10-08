@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{"1gKN":function(e,l,n){e.exports={skills:"Skills-module--skills--19uAl"}},jyGx:function(e,l,n){"use strict";n.r(l);var t=n("q1tI"),a=n.n(t),i=n("1gKN"),s=n.n(i);l.default=function(){return a.a.createElement("section",{className:s.a.skills},a.a.createElement("li",null," JavaScript"),a.a.createElement("li",null," React"),a.a.createElement("li",null," HTML5 & CSS3"),a.a.createElement("li",null," GIT"))}}}]);
+//# sourceMappingURL=component---src-pages-skills-skills-jsx-2e2e9cbb3de7bd7a5003.js.map
