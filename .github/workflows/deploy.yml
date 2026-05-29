@@ -30,7 +30,8 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
+          # User site (username.github.io repo) → /. Project site → /repo-name/
+          VITE_BASE_PATH: ${{ endsWith(github.repository, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -23,37 +23,45 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173).
 
-For local preview matching GitHub Pages (project site):
+For local preview matching your live URL:
 
 ```bash
 cp .env.example .env
-# Set VITE_BASE_PATH=/your-repo-name/ then:
+# moinkatja.github.io repo → VITE_BASE_PATH=/
+# project site → VITE_BASE_PATH=/repo-name/
 npm run dev
 ```
 
 ## Deploy to GitHub Pages
 
-1. Push this repo to GitHub (`main` branch).
-2. **Settings → Pages → Build and deployment → Source:** GitHub Actions.
-3. The workflow sets `VITE_BASE_PATH` from your repo name automatically.
+### Main URL: `https://moinkatja.github.io` (recommended)
 
-**User site** (`username.github.io` root repo): set repository variable or change workflow env to `VITE_BASE_PATH=/`.
+1. Create or use a repo named **`moinkatja.github.io`** (exact name, public).
+2. Push this project to that repo’s `main` branch.
+3. **Settings → Pages → Source:** GitHub Actions.
+4. Site URL: **https://moinkatja.github.io**
 
-**Manual build:**
+The workflow uses `VITE_BASE_PATH=/` for `*.github.io` repos automatically.
+
+### Alternative: project URL
+
+Repo named `portfolio` → **https://moinkatja.github.io/portfolio/**
+
+**Manual build (user site):**
 
 ```bash
-VITE_BASE_PATH=/your-repo-name/ npm run build
+VITE_BASE_PATH=/ npm run build
 ```
 
 Output is in `dist/` (ignored by git; CI builds fresh).
 
 ## Publish checklist
 
+- [ ] Repo is **`moinkatja.github.io`** for root URL (or accept `/portfolio/` URL)
 - [ ] GitHub + LinkedIn URLs in `site.ts` are correct
 - [ ] Tableau thumbnails open from project cards
 - [ ] Jupyter repos on GitHub; uncomment `notebook` links in `projects.ts` when live
 - [ ] Optional: certificate links in `credentials.ts`
-- [ ] Repo name matches GitHub Pages URL (`/repo-name/`)
 
 ## License
 

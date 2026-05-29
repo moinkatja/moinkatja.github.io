@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "VITE_BASE_PATH=/portfolio/ npm run build && gh-pages -d dist"
+    "deploy": "VITE_BASE_PATH=/ npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^12.40.0",
