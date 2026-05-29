@@ -1,13 +1,6 @@
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
-import {
-  SiFigma,
-  SiGit,
-  SiPandas,
-  SiPostgresql,
-  SiPython,
-  SiReact,
-} from "react-icons/si";
+import { SiPostgresql, SiPython, SiReact } from "react-icons/si";
 import { TbChartBar } from "react-icons/tb";
 import { skills } from "../data/skills";
 import { Reveal, staggerContainer } from "./motion";
@@ -66,17 +59,6 @@ export function Skills() {
             </motion.article>
           ))}
         </motion.div>
-
-        <Reveal className="mt-10 flex justify-center gap-4 text-xl text-muted/40">
-          {[SiPandas, SiGit, SiFigma].map((Icon, i) => (
-            <span
-              key={i}
-              className="flex h-10 w-10 items-center justify-center rounded-xl bg-surface shadow-sm transition hover:text-pink"
-            >
-              <Icon />
-            </span>
-          ))}
-        </Reveal>
       </div>
     </section>
   );
