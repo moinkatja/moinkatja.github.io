@@ -15,30 +15,6 @@ const githubRepos = {
 
 export const projects: Project[] = [
   {
-    id: "happiness",
-    title: "Global Happiness",
-    description:
-      "147 countries compared: Finland leads, and freedom vs GDP tell different stories by year.",
-    tools: ["tableau"],
-    featured: true,
-    tableauWorkbook: "Happiness_17774093190550",
-    tableauView: "Dashboard",
-    thumbnail: thumb("Happiness_17774093190550", "Dashboard", true),
-    links: { tableau: `${tableauVizBase}/Happiness_17774093190550/Dashboard` },
-  },
-  {
-    id: "churn",
-    title: "Customer Churn",
-    description:
-      "Who leaves, when, and which signals matter most in a deep-dive churn dashboard.",
-    tools: ["tableau"],
-    featured: true,
-    tableauWorkbook: "Churn_17770163509080",
-    tableauView: "DashboardDeepDive",
-    thumbnail: thumb("Churn_17770163509080", "DashboardDeepDive", true),
-    links: { tableau: `${tableauVizBase}/Churn_17770163509080/DashboardDeepDive` },
-  },
-  {
     id: "food-delivery",
     title: "Food Delivery Performance",
     description:
@@ -53,6 +29,30 @@ export const projects: Project[] = [
       repo: githubRepos.foodDelivery,
       notebook: `${githubRepos.foodDelivery}/blob/main/notebooks/02_eda.ipynb`,
     },
+  },
+  {
+    id: "churn",
+    title: "Customer Churn",
+    description:
+      "Who leaves, when, and which signals matter most in a deep-dive churn dashboard.",
+    tools: ["tableau"],
+    featured: true,
+    tableauWorkbook: "Churn_17770163509080",
+    tableauView: "DashboardDeepDive",
+    thumbnail: thumb("Churn_17770163509080", "DashboardDeepDive", true),
+    links: { tableau: `${tableauVizBase}/Churn_17770163509080/DashboardDeepDive` },
+  },
+  {
+    id: "happiness",
+    title: "Global Happiness",
+    description:
+      "147 countries compared: Finland leads, and freedom vs GDP tell different stories by year.",
+    tools: ["tableau"],
+    featured: true,
+    tableauWorkbook: "Happiness_17774093190550",
+    tableauView: "Dashboard",
+    thumbnail: thumb("Happiness_17774093190550", "Dashboard", true),
+    links: { tableau: `${tableauVizBase}/Happiness_17774093190550/Dashboard` },
   },
   {
     id: "airlines",
