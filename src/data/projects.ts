@@ -8,9 +8,11 @@ function thumb(workbook: string, view = "Dashboard", featured = false) {
     : tableauThumbUrl(workbook, view);
 }
 
-/**
- * featured = shown by default. Add links.notebook when the GitHub repo is public.
- */
+const githubRepos = {
+  foodDelivery: "https://github.com/moinkatja/weather-food-delivery-analysis",
+  airlines: "https://github.com/moinkatja/airlines-rating",
+} as const;
+
 export const projects: Project[] = [
   {
     id: "happiness",
@@ -40,7 +42,7 @@ export const projects: Project[] = [
     id: "food-delivery",
     title: "Food Delivery Performance",
     description:
-      "Pandas EDA on delivery data, then Tableau on speed, volume, and what drives performance.",
+      "Jupyter analysis of weather and traffic on delivery times, plus Tableau on operational performance.",
     tools: ["tableau", "python"],
     featured: true,
     tableauWorkbook: "food_delivery_17793110647910",
@@ -48,19 +50,25 @@ export const projects: Project[] = [
     thumbnail: thumb("food_delivery_17793110647910", "Dashboard", true),
     links: {
       tableau: `${tableauVizBase}/food_delivery_17793110647910/Dashboard`,
+      repo: githubRepos.foodDelivery,
+      notebook: `${githubRepos.foodDelivery}/blob/main/notebooks/02_eda.ipynb`,
     },
   },
   {
     id: "airlines",
     title: "Airlines Over the World",
     description:
-      "EDA on 23k+ airline reviews, then Tableau on ratings by category, traveller type, and top destinations.",
+      "Python prep for 23k+ airline reviews, then Tableau on ratings by category, traveller type, and destinations.",
     tools: ["tableau", "python"],
     featured: true,
     tableauWorkbook: "Airlinesovertheworld",
     tableauView: "Dashboard",
     thumbnail: thumb("Airlinesovertheworld", "Dashboard", true),
-    links: { tableau: `${tableauVizBase}/Airlinesovertheworld/Dashboard` },
+    links: {
+      tableau: `${tableauVizBase}/Airlinesovertheworld/Dashboard`,
+      repo: githubRepos.airlines,
+      notebook: `${githubRepos.airlines}/blob/main/notebooks/prepare_tableau_data.ipynb`,
+    },
   },
   {
     id: "purchase-behavior",
