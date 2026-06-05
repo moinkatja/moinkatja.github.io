@@ -14,6 +14,7 @@ import { TableauThumb } from "./TableauThumb";
 const allFilters: { id: "all" | Tool; label: string }[] = [
   { id: "all", label: "All" },
   { id: "tableau", label: "Tableau" },
+  { id: "sql", label: "SQL" },
   { id: "python", label: "Jupyter" },
 ];
 

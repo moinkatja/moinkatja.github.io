@@ -11,6 +11,7 @@ function thumb(workbook: string, view = "Dashboard", featured = false) {
 const githubRepos = {
   foodDelivery: "https://github.com/moinkatja/weather-food-delivery-analysis",
   airlines: "https://github.com/moinkatja/airlines-rating",
+  atp: "https://github.com/moinkatja/atp-top50-analytics",
 } as const;
 
 export const projects: Project[] = [
@@ -68,6 +69,21 @@ export const projects: Project[] = [
       tableau: `${tableauVizBase}/Airlinesovertheworld/Dashboard`,
       repo: githubRepos.airlines,
       notebook: `${githubRepos.airlines}/blob/main/notebooks/prepare_tableau_data.ipynb`,
+    },
+  },
+  {
+    id: "atp-top50",
+    title: "ATP Top-50 Analytics",
+    description:
+      "Python ETL and SQL on ATP rankings (2015–2025): streaks, rolling form, and surfaces in Tableau.",
+    tools: ["tableau", "python", "sql"],
+    featured: true,
+    tableauWorkbook: "ATP_17804953556700",
+    tableauView: "Dashboard",
+    thumbnail: thumb("ATP_17804953556700", "Dashboard", true),
+    links: {
+      tableau: `${tableauVizBase}/ATP_17804953556700/Dashboard`,
+      repo: githubRepos.atp,
     },
   },
   {
