@@ -12,7 +12,7 @@ const highlights = [
   },
   {
     title: "Always learning",
-    body: "Statistics, cloud warehouses, and sharper stories with every project.",
+    body: "Statistics and sharper stories with every project.",
   },
 ];
 
