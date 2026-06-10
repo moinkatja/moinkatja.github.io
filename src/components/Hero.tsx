@@ -65,13 +65,10 @@ export function Hero() {
             initial="hidden"
             animate="visible"
             custom={3}
-            className="mt-10 flex flex-wrap gap-3"
+            className="mt-10"
           >
             <a href="#projects" className="btn-primary">
               View work
-            </a>
-            <a href="#story" className="btn-secondary">
-              My process
             </a>
           </motion.div>
 

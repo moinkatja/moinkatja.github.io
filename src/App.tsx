@@ -4,10 +4,10 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
+import { PersonalProjects } from "./components/PersonalProjects";
 import { Projects } from "./components/Projects";
 import { ScrollProgress } from "./components/ScrollProgress";
 import { Skills } from "./components/Skills";
-import { StoryScroll } from "./components/StoryScroll";
 
 export default function App() {
   return (
@@ -17,10 +17,10 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <StoryScroll />
+        <Projects />
+        <PersonalProjects />
         <About />
         <Skills />
-        <Projects />
         <Contact />
       </main>
       <Footer />

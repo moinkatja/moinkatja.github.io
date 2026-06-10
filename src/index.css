@@ -150,10 +150,6 @@
     @apply bg-blue-50 text-tableau;
   }
 
-  .story-step-panel {
-    @apply h-[92vh] scroll-mt-32 shrink-0 md:h-[100vh];
-  }
-
   .code-terminal {
     @apply overflow-hidden rounded-2xl border border-white/10 bg-ink text-left;
     box-shadow:

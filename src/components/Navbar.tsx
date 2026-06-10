@@ -4,7 +4,7 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { navLinks, site } from "../data/site";
 import { useActiveSection } from "../hooks/useActiveSection";
 
-const sections = ["story", "about", "skills", "projects", "contact"];
+const sections = ["projects", "personal", "about", "skills", "contact"];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
